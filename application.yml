@@ -27,6 +27,19 @@ user-service:
   ribbon:
     listOfServers: ${services.user-service.host}:${services.user-service.port}
 
+zuul:
+  sensitiveHeaders:
+  routes:
+    reister-service:
+      path: /users
+      serviceId: userservice
+      strip-prefix: false
+    todo-service:
+      path: /todos
+      serviceId: todoservice
+      strip-prefix: false
+  prefix: /api
+
 spring:
   jpa:
     hibernate:
