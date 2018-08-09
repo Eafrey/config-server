@@ -7,6 +7,10 @@ services:
     host: user-service
     port: 8081
 
+  zuul-gateway:
+    host: zuul-gateway
+    port: 8080
+
 db:
   host: mysql
   port: 3306
