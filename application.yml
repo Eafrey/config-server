@@ -32,11 +32,11 @@ zuul:
   routes:
     reister-service:
       path: /users
-      serviceId: userservice
+      serviceId: user-service
       strip-prefix: false
     todo-service:
       path: /todos
-      serviceId: todoservice
+      serviceId: todo-service
       strip-prefix: false
   prefix: /api
 
