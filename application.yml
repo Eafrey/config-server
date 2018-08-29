@@ -31,7 +31,7 @@ zuul:
   sensitiveHeaders:
   routes:
     reister-service:
-      path: /users
+      path: /users/**
       serviceId: user-service
       strip-prefix: false
     todo-service:
