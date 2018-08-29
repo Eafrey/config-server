@@ -35,7 +35,7 @@ zuul:
       serviceId: user-service
       strip-prefix: false
     todo-service:
-      path: /todos
+      path: /todos/**
       serviceId: todo-service
       strip-prefix: false
   prefix: /api
